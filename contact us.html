@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, #D4145A, #FBB03B);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Styles for form elements */
+        .form-input {
+            background-color: #ffffff;
+            color: #000;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            .form-title {
+                font-size: 2xl;
+            }
+
+            .submit-button {
+                padding: 10px 0;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .form-container {
+                padding: 40px;
+            }
+
+            .form-title {
+                font-size: 4xl;
+            }
+
+            .submit-button {
+                padding: 12px 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-900 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-3xl font-extrabold text-[#FBB03B]">Arham Prints</a>
+                </div>
+
+                <!-- Links (Desktop) -->
+                <div class="hidden md:flex space-x-10 items-center">
+                    <a href="about.html" class="text-gray-300 hover:text-[#FBB03B] transition duration-300 ease-in-out text-lg">About</a>
+                    <a href="services.html" class="text-gray-300 hover:text-[#FBB03B] transition duration-300 ease-in-out text-lg">Services</a>
+                    <a href="contact us.html" class="text-gray-300 hover:text-[#FBB03B] transition duration-300 ease-in-out text-lg">Contact Us</a>
+                </div>
+
+                <!-- Hamburger Menu (Mobile) -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-[#FBB03B] focus:outline-none">
+                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="about.html"
+                class="block px-4 py-2 text-sm text-gray-300 hover:bg-[#D4145A] transition duration-300">About</a>
+            <a href="services.html"
+                class="block px-4 py-2 text-sm text-gray-300 hover:bg-[#D4145A] transition duration-300">Services</a>
+            <a href="contact us.html"
+                class="block px-4 py-2 text-sm text-gray-300 hover:bg-[#D4145A] transition duration-300">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="flex-grow flex items-center justify-center">
+        <div class="max-w-md mx-auto bg-gray-800 rounded-lg shadow-lg p-6 form-container mt-2 mb-10">
+            <h2 class="text-4xl font-bold text-center form-title mb-4">Get In Touch</h2>
+            <p class="text-lg text-gray-300 text-center mb-4">We are here to help you. Click the button below!</p>
+
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <!-- <label for="name" class="block text-sm font-medium text-white">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md form-input" placeholder="Your Name"> -->
+                </div>
+                <div>
+                    <!-- <label for="email" class="block text-sm font-medium text-white">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md form-input" placeholder="Your Email"> -->
+                </div>
+                <div>
+                    <!-- <label for="message" class="block text-sm font-medium text-white">Message</label>
+                    <textarea id="message" name="message" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md form-input" rows="4" placeholder="Your Message"></textarea> -->
+                </div>
+                <div>
+                <a href="mailto:printfarm09@gmail.com">  <button type="submit" class="w-full py-2 bg-[#FBB03B] text-gray-800 font-semibold rounded-md hover:bg-[#D4145A] transition duration-300 submit-button"> Send Message</button> </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col items-center">
+            <div class="text-gray-400 mb-2">
+                <p>&copy; 2024 Arham Prints. All rights reserved.</p>
+            </div>
+            <div class="text-gray-400 mb-2">
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://wa.me/919711978588" class="text-gray-400 hover:text-[#FBB03B] transition duration-300">WhatsApp</a>
+                <a href="https://www.instagram.com/designfair_studio?igsh=YWdta2NmczFnYm42" class="text-gray-400 hover:text-[#FBB03B] transition duration-300">Instagram</a>
+                <!-- <a href="#" class="text-gray-400 hover:text-[#FBB03B] transition duration-300">Twitter</a> -->
+            </div>
+            <p class="text-gray-400">Email: printfarm09@gmail.com | Phone: +91 97119 78588</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
